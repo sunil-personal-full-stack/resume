@@ -21,12 +21,9 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
             margin: 0;
-            padding: 0;
-            background-color: #f6f6f6;
+            padding: 20px;
             color: #333;
-            text-align: center;
         }
 
         .container {
@@ -63,11 +60,6 @@
             margin-bottom: 10px;
         }
 
-        .experience p em {
-            font-style: normal;
-            color: #666;
-        }
-
         ul {
             list-style-type: none;
             padding: 0;
@@ -80,6 +72,24 @@
 
         .references {
             margin-top: 40px;
+        }
+
+        .print-btn {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .print-btn button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .print-btn button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
@@ -259,6 +269,9 @@
 
         <h2 class="references">References</h2>
         <p><em>Available upon request</em></p>
+        <div class="print-btn">
+            <button onclick="window.print()">Print</button>
+        </div>
     </div>
 </body>
 </html>
